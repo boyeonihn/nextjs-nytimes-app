@@ -1,0 +1,17 @@
+.header {
+  font-size: 3rem;
+  padding: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav * {
+  transition: all 0.5s ease;
+}
+.nav *:hover {
+  color: palegreen;
+  text-decoration: underline;
+}
