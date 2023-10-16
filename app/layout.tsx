@@ -1,8 +1,7 @@
-import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import '@/styles/globals.css';
+import Header from '@/components/header';
+import { grandi, ultra, berkshire } from './styles/fonts';
 
 export const metadata: Metadata = {
   title: 'The New York Times - Bestsellers',
@@ -16,10 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className="header">The New York Times</header>
+      <body className={ultra.className}>
+        <Header />
         {children}
-        <footer>THIS IS THE FOOTER WHAT IS UP PEOPLE</footer>
       </body>
     </html>
   );
